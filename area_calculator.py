@@ -10,4 +10,8 @@ def get_square_area(side):
     """Returns the area of a square of the given side length"""
     
     return(side**2)
+
+def get_rectangle_area(width, height):
+    """Returns the area of a recatangle of given height and width"""
     
+    return(width * height)    
