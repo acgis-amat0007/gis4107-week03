@@ -6,7 +6,6 @@ def miles_to_km(miles):
     kilometers = MI_TO_KM * miles
     return miles, kilometers
 
-
 def km_per_hr_to_m_per_s(kph):
     """Converts kilometers per hour to meters per second""" 
     KPH_TO_MPS = 0.27777777
