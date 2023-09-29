@@ -44,7 +44,7 @@ def dd_to_dms(dd):
 def get_fuel_cost(km, mpg, cad_per_l):
     """Return cost of fuel"""
     result9 = converter.get_fuel_cost(km, mpg, cad_per_l)
-    return f"{result9[0]} km at {result9[1]} mi/gal and $ {result9[2]} will cost {result9[3]}"
+    return f"{result9[0]} km at {result9[1]} mi/gal and $ {result9[2]} per L will cost ${result9[3]}"
 
 
 

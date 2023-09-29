@@ -11,7 +11,7 @@ def miles_to_km(miles):
 def km_per_hr_to_m_per_s(kph):
     """Converts kilometers per hour to meters per second""" 
     KPH_TO_MPS = 0.27777777
-    mps=kph*KPH_TO_MPS
+    mps=round(kph*KPH_TO_MPS,2)
     return kph, mps   
 
 def sqmeters_to_hectares(sqm_3):
@@ -42,7 +42,7 @@ def get_bear_count(bear_per_sqkm, sqm6):
 
 def dms_to_dd(deg7, min7, sec7):
     """Converts Degrees:Minutes:Seconds to Decimel Degrees"""
-    dd7=deg7+(min7/60)+(sec7/3000)
+    dd7=deg7+(min7/60)+(sec7/3600)
     dd7=round(dd7,5)
     return deg7, min7, sec7, dd7
 
