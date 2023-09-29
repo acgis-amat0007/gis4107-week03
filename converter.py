@@ -61,5 +61,5 @@ def get_fuel_cost(km9, mpg9, cad_per_l):
     GAL = mi/mpg9
     L_PER_GAL = 3.78541
     CAD_PER_GAL = cad_per_l * L_PER_GAL
-    cost = GAL * CAD_PER_GAL
+    cost = round(GAL * CAD_PER_GAL,2)
     return km9, mpg9, cad_per_l, cost
