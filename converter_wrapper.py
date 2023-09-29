@@ -26,4 +26,9 @@ def acres_to_edge_of_square(ac2):
     result5 = converter.acres_to_edge_of_square(ac2)
     return f"Edge length of {result5[0]} acres square is {round(result5[1],2)} meters"
 
+def get_bear_count(bear_per_sqkm, sqm6):
+    """Returns estimated number of bears"""
+    result6 = converter.get_bear_count(bear_per_sqkm, sqm6)
+    return f"When bear density is {result6[0]} bears/sq. km, and the area is {result6[1]} sq. m, the probable number of bears is {int(result6[2])}"
+print(get_bear_count(4,1000000))
 
