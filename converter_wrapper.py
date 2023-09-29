@@ -30,5 +30,23 @@ def get_bear_count(bear_per_sqkm, sqm6):
     """Returns estimated number of bears"""
     result6 = converter.get_bear_count(bear_per_sqkm, sqm6)
     return f"When bear density is {result6[0]} bears/sq. km, and the area is {result6[1]} sq. m, the probable number of bears is {int(result6[2])}"
-print(get_bear_count(4,1000000))
+
+def dms_to_dd(deg, min, sec):
+    """Returns decimal degrees from degrees, minutes, seconds"""
+    result7 = converter.dms_to_dd(deg, min, sec)
+    return f"{result7[0]}:{result7[1]}:{result7[2]} = {result7[3]}"
+
+def dd_to_dms(dd):
+    """Returns degrees, minute, seconds from decimal degrees"""
+    result8 = converter.dd_to_dms(dd)
+    return f"{result8[3]} = {result8[0]}:{result8[1]}:{result8[2]}"
+
+def get_fuel_cost(km, mpg, cad_per_l):
+    """Return cost of fuel"""
+    result9 = converter.get_fuel_cost(km, mpg, cad_per_l)
+    f"{result9[0]} km at {result9[1]} mi/gal and $ {result9[2]} will cost {result9[3]}"
+
+    
+
+
 
