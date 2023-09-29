@@ -14,7 +14,7 @@ def km_per_hr_to_m_per_s(kph):
     mps=kph*KPH_TO_MPS
     return kph, mps   
 
-def sqmetres_to_hectares(sqm_3):
+def sqmeters_to_hectares(sqm_3):
     """Converts square meters to hectares"""
     SQM_TO_HA = 0.0001
     ha = sqm_3*SQM_TO_HA
